@@ -2,3 +2,9 @@ html {
   height: 100%;
   width: 100%;
 }
+.logo {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7dYhDgAgCEBR0M2ZvIjR+3hrL2PBwgkgWP4vEN9GQUtfJom0Td9iFZ/fAgAAAAAAAABoHTv1D9g9vsXiBAAAAAAAAMBngMgDcRoF6bXOJOUAAAAASUVORK5CYII=");
+  font-family: "MS Gothic";
+  color: white;
+  font-size: 64px;
+}
