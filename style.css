@@ -2,10 +2,10 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background: #000000;
+  background: linear-gradient(#030E5E, #020833);
   color: whitesmoke;
   font-size: 20px;
-  text-align: center;
+  overflow-x: hidden;
 }
 html, input, button {
   font-family: "MS Gothic", "Courier New";
@@ -16,8 +16,9 @@ html, input, button {
   font-size: 64px;
   padding: 10px;
   font-weight: bold;
+  text-align: center;
 }
-h1, h2, h3, .logo {
+h1, h2, h3, .logo, b {
   text-shadow: 3px 3px 3px #ffffffaa;
 }
 a:visited {
@@ -49,7 +50,7 @@ button {
   border-top: 3px solid#fff;
   border-left: 3px solid#fff;
 }
-button:hover {
+/*button:hover {
   background: #fff;
 }
 button:active {
@@ -58,22 +59,50 @@ button:active {
   border-top: 3px solid#aaa;
   border-bottom: 3px solid#fff;
   border-right: 3px solid#fff;
-}
-.fwbutton {
+}*/
+.subchapter {
   width: 100%;
   display: flex;
-  border: none;
+  border: none !important;
   background: #00000000;
   padding:10px;
-  justify-content: center;
-  font-size: 28px;
+  justify-content: left;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
 }
-.fwbutton:hover {
-  background: #ffffff44;
+.subchapter:hover {
+  background: #fff3;
 }
-.fwbutton:active {
-  background: #00000000 !important;
+.subchapter:active {
+  background: #0003 !important;
 }
-.chapter {
-  font-size: 40px !important;
+.subchapter.open:before{
+  background-image: url("arrow-up.png");
+}
+.subchapter.closed:before{
+  background-image: url("arrow-down.png");
+}
+.subchapter:before{
+  content: " ";
+  width: 32px;
+  white-space: pre;
+  background-position: center;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+}
+.chapter-contents.closed{
+  display:none;
+}
+.chapter-contents.open{
+  background-color:#ffffff15;
+  padding:8px 10px;
+}
+.chapter-contents *:first-child{
+  margin-top:0px !important;
+  padding-top:0px !important;
+}
+.chapter-contents *:last-child{
+  margin-bottom:0px !important;
+  padding-bottom:0px !important;
 }

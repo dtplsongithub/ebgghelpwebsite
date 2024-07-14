@@ -10,8 +10,41 @@
 
 <body>
   <div class="logo">ebgg</div>
-  website is under construction
-  <script src="script.js"></script>
+  <div class="chapter">
+    <button class="subchapter">load a background</button>
+    <div class="chapter-contents">
+      <p>to load a background, go to the main menu and click on "load a background".</p>
+      <!-- screenshot without window border of main menu with an arrow on "load a background" button -->
+      <p>from there, you can choose any background from the list of built-in backgrounds that comes with ebgg. backgrounds come in the .deb format.</p>
+      <p>if you would like to import a background somebody else has made, ask them for the .deb file, and put it in the "backgrounds" folder, inside of the processing sketch folder.</p>
+      <!-- screenshot of the sketch folder with backgrounds folder selected, from windows explorer -->
+    </div>
+  </div>
+  <div class="chapter">
+    <button class="subchapter">edit a background</button>
+    <div class="chapter-contents">
+      <p>to edit a background, go to the main menu and click on "editor". you will be greeted with a bunch of options:</p>
+      <b>name</b>: the name of the background. this property will define the name of the saved file, so make sure to change it to avoid overwriting the existing background.<br>
+      <b>palette</b>: the color palette used. it is a list of colors in <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">hexadecimal format</a>. the "paloffset >" label (that may move depending on the background) is the palette index offset.<br>
+      <b>palette map</b>: the "image" used by the background: the pattern that gets filtered then drawn repeatedly.<br>
+      <b>switch pal colors every n frame</b>: number that defines how often the palette offsets every frame. a frame is 1/60th of a second, two frames are 1/30th of a second, etc.<br>
+      <b>switch pal colors?</b>: yes-no property for choosing either to offset the palette or not.<br>
+      <b>switch pal colors in reverse?</b>: yes-no property for choosing either to offset the palette in reverse or not.<br>
+      <b>dont switch the first n items</b>: number that defines which first palette items to stop offsetting before rendering.<br>
+      <b>palette switch multiplier</b>: how much does the palette offset change per frame.<br>
+      <b>camera x velocity</b>: how much the camera's x position moves per frame.<br>
+      <b>camera y velocity</b>: how much the camera's y position moves per frame.<br>
+      <b>scale</b>: how much the rendered output is scaled in. the more it's high, the more it gets zoomed in.<br>
+      <b>x wavyness scale</b>: how much the x position gets a wavy/sine effect.<br>
+      <b>x wavyness frequency</b>: how much the x position wave moves every frame.<br>
+      <b>interleaved x wavyness?</b>: yes-no property for choosing whether the x position wave is interleaved or not.<br>
+      <b>y wavyness scale</b>: how much the y position gets a wavy/sine effect.<br>
+      <b>y wavyness frequency</b>: how much the y position wave moves every frame.<br>
+      <b>x static effect</b>: how much the x position gets offset by a random value for every pixel. makes the background shake, or look like <a href="https://en.wikipedia.org/wiki/Noise_(video)">analog tv snow.</a><br>
+      <p>if you would like to edit numbers more faster, some properties allow use of "big steps". press the A key to substract, and D to add.</p>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
