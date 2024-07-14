@@ -11,7 +11,8 @@ html, input, button {
   font-family: "MS Gothic", "Courier New";
 }
 .logo {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7dYhDgAgCEBR0M2ZvIjR+3hrL2PBwgkgWP4vEN9GQUtfJom0Td9iFZ/fAgAAAAAAAABoHTv1D9g9vsXiBAAAAAAAAMBngMgDcRoF6bXOJOUAAAAASUVORK5CYII=");
+  background: black url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7dYhDgAgCEBR0M2ZvIjR+3hrL2PBwgkgWP4vEN9GQUtfJom0Td9iFZ/fAgAAAAAAAABoHTv1D9g9vsXiBAAAAAAAAMBngMgDcRoF6bXOJOUAAAAASUVORK5CYII=") repeat;
+  animation: scroll16pxbg linear 8s infinite;
   font-size: 64px;
   padding: 10px;
   font-weight: bold;
@@ -32,12 +33,12 @@ a:active {
 }
 @keyframes scroll16pxbg {
   0% {
-    background-position-x: 0px;
-    background-position-y: 0px;
-  }
-  100% {
     background-position-x: 16px;
     background-position-y: 16px;
+  }
+  100% {
+    background-position-x: 0px;
+    background-position-y: 0px;
   }
 }
 button {
